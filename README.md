@@ -87,6 +87,15 @@ Default version for auto run:
 4. Choose `python_version` (`3.10` / `3.11` / `3.12`).
 5. Select branch `main`, then click `Run workflow`.
 
+### Run workflow from fork (for non-collaborator users)
+1. Open this repository page.
+2. Click `Fork` (top-right) and create fork in your account.
+3. Open your fork repository.
+4. Go to `Actions` tab.
+5. If prompted, click `I understand my workflows, go ahead and enable them`.
+6. Click workflow `Python Tests`.
+7. Click `Run workflow`, choose `python_version`, then run.
+
 Workflow artifacts per run:
 - `test-reports-py<version>`
 - contains `junit-<version>.xml` and `report-<version>.html`
