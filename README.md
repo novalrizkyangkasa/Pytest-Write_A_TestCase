@@ -56,11 +56,19 @@ It runs tests automatically on:
 - `pull_request` to `main`
 - manual trigger (`workflow_dispatch`)
 
+Default version for auto run:
+- Python `3.12`
+
 ### Run tests manually from GitHub UI
 1. Open `Actions` tab in this repository.
 2. Click workflow `Python Tests`.
 3. Click `Run workflow`.
-4. Select branch `main`, then click `Run workflow`.
+4. Choose `python_version` (`3.10` / `3.11` / `3.12`).
+5. Select branch `main`, then click `Run workflow`.
+
+Workflow artifacts per run:
+- `test-reports-py<version>`
+- contains `junit-<version>.xml` and `report-<version>.html`
 
 Direct link:
 - `https://github.com/novalrizkyangkasa/Pytest-Write_A_TestCase/actions/workflows/python-tests.yml`
