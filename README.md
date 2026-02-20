@@ -1,5 +1,7 @@
 # Pytest - Write A TestCase
 
+[![Python Tests](https://github.com/novalrizkyangkasa/Pytest-Write_A_TestCase/actions/workflows/python-tests.yml/badge.svg?branch=main)](https://github.com/novalrizkyangkasa/Pytest-Write_A_TestCase/actions/workflows/python-tests.yml)
+
 Simple Python project for learning how to write test cases with `pytest`.
 
 ## 1. Setup / Installation (Python and Pytest)
@@ -44,7 +46,26 @@ cd Pytest-Write_A_TestCase
 - VS Code: `File` -> `Open Folder` -> select this project folder
 - PyCharm: `Open` -> select this project folder
 
-## 3. How to Run
+## 3. GitHub Actions (Run Tests in GitHub)
+
+GitHub Actions workflow file:
+- `.github/workflows/python-tests.yml`
+
+It runs tests automatically on:
+- `push` to `main`
+- `pull_request` to `main`
+- manual trigger (`workflow_dispatch`)
+
+### Run tests manually from GitHub UI
+1. Open `Actions` tab in this repository.
+2. Click workflow `Python Tests`.
+3. Click `Run workflow`.
+4. Select branch `main`, then click `Run workflow`.
+
+Direct link:
+- `https://github.com/novalrizkyangkasa/Pytest-Write_A_TestCase/actions/workflows/python-tests.yml`
+
+## 4. How to Run (Local)
 
 This project uses `pytest.ini` as default config:
 ```ini
@@ -82,7 +103,7 @@ pytest apply_discount.py -k invalid_code
 pytest -c pytest.ini
 ```
 
-## 4. Summary of Testcases in Each File
+## 5. Summary of Testcases in Each File
 
 ### `test_math.py` (8 test cases)
 - `test_add_integers` (4): positive, mixed sign, zero, negative integers
