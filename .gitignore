@@ -1,0 +1,31 @@
+__pycache__/
+.copy/
+.pytest_cache/
+
+# Python bytecode
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test & coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
