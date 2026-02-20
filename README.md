@@ -46,7 +46,28 @@ cd Pytest-Write_A_TestCase
 - VS Code: `File` -> `Open Folder` -> select this project folder
 - PyCharm: `Open` -> select this project folder
 
-## 3. GitHub Actions (Run Tests in GitHub)
+## 3. Project Structure
+
+```text
+Pytest-Write_A_TestCase/
+├── .github/
+│   └── workflows/
+│       └── python-tests.yml
+├── .gitignore
+├── README.md
+├── pytest.ini
+├── test_math.py
+├── calculate_total_price.py
+├── apply_discount.py
+└── validate_user_shipping_address.py
+```
+
+Additional local/generated directories:
+- `.pytest_cache/`
+- `__pycache__/`
+- `.copy/`
+
+## 4. GitHub Actions (Run Tests in GitHub)
 
 GitHub Actions workflow file:
 - `.github/workflows/python-tests.yml`
@@ -73,7 +94,7 @@ Workflow artifacts per run:
 Direct link:
 - `https://github.com/novalrizkyangkasa/Pytest-Write_A_TestCase/actions/workflows/python-tests.yml`
 
-## 4. How to Run (Local)
+## 5. How to Run (Local)
 
 This project uses `pytest.ini` as default config:
 ```ini
@@ -111,7 +132,7 @@ pytest apply_discount.py -k invalid_code
 pytest -c pytest.ini
 ```
 
-## 5. Summary of Testcases in Each File
+## 6. Summary of Testcases in Each File
 
 ### `test_math.py` (8 test cases)
 - `test_add_integers` (4): positive, mixed sign, zero, negative integers
